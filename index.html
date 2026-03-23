@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Titan Supplements - Suplementos deportivos premium de alto rendimiento. Creatina, proteínas y pre-entrenos para resultados colosales.">
+    <title>Titan Supplements - Equipamiento de Élite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">TITAN<span>SUPPS</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="nav-btn" id="loginBtn">Ingresar</button>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">ENTRENA COMO UN <span>TITÁN</span></h1>
+            <p>Descubre los suplementos diseñados para llevar tu físico más allá de los límites humanos. Conviértete en
+                la élite. Sobrevive a cada serie.</p>
+            <button class="cta-btn" id="exploreBtn"
+                onclick="document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });">Explorar
+                Arsenal</button>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <h2 id="productsHeading">NUESTRO ARSENAL</h2>
+        <div class="product-grid">
+            <div class="product-card" id="product1">
+                <div class="image-wrapper"><img src="./assets/creatine.png" alt="Titan Creatine Monohydrate"></div>
+                <h3>Titan Creatine Monohydrate</h3>
+                <p>Fuerza explosiva. Siente el poder del Titán de Ataque en cada entrenamiento, retrasando la fatiga
+                    nerviosa.</p>
+                <div class="price">29.99 €</div>
+                <button class="buy-btn">Añadir al Equipo</button>
+            </div>
+
+            <div class="product-card" id="product2">
+                <div class="image-wrapper"><img src="./assets/protein.png" alt="Scout Regiment Whey Protein"></div>
+                <h3>Scout Regiment Whey Protein</h3>
+                <p>Proteína aislada de rápida absorción. Recuperación muscular para soldados de élite. Sabor Vainilla
+                    Colosal.</p>
+                <div class="price">45.99 €</div>
+                <button class="buy-btn">Añadir al Equipo</button>
+            </div>
+
+            <div class="product-card" id="product3">
+                <div class="image-wrapper"><img src="./assets/hero.png" alt="Ackerman Pre-Workout" class="fallback-img">
+                </div>
+                <h3>Ackerman Pre-Workout</h3>
+                <p>Energía inagotable y concentración letal. Prepárate para la batalla final antes de cruzar las puertas
+                    del gimnasio.</p>
+                <div class="price">34.99 €</div>
+                <button class="buy-btn">Añadir al Equipo</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2024 Titan Supplements. Entrena duro, pelea con honor. Entrega tu corazón a los hierros.</p>
+    </footer>
+
+    <script>
+        // Smooth navbar behavior on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 14, 19, 0.95)';
+                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.5)';
+            } else {
+                navbar.style.background = 'rgba(13, 17, 23, 0.8)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
